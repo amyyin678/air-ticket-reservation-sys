@@ -1,0 +1,93 @@
+<html>
+    <head> 
+    </head>
+    <body>
+    	<h2>View Flights</h2>
+    	<form action="/airline_staff_view_flights" method="POST">
+    		<div class="form-group">
+	    		<div>
+	    			<input type="text" name="departure_airport" id="depart" placeholder="Departure Airport"/>
+	    		</br>
+	    		</div>
+	    	</div>
+	    	
+			<!-- <div class="form-group">
+	    		<div>
+	    			<input type="text" name="departure_city" id="depart" placeholder="Departure City"/>
+	    		</div>
+	    	</div> -->
+			</br>
+	    	<div class="form-group">
+	    		<div>
+	    			<input type="text" name="arrival_airport" id="arrival" placeholder="Arrival Airport"/>
+	    		</div>
+	    	</div>
+			
+			<!-- <div class="form-group">
+	    		<div>
+	    			<input type="text" name="arrival_city" id="arrival" placeholder="Arrival City"/>
+	    		</div>
+	    	</div> -->
+			
+	    	<div class="form-group">
+	    		<div>
+	    			<h5>Departure Date</h5>
+	    			<input type="date" name="departure_time"/>
+	    			<br>
+	    		</div>
+	    	</div>
+
+	    	</br>
+	    	<div>
+	    		<input type="submit" class="btn btn-default" id="submit" value="submit"/>
+	    	</div>
+    	</form>
+
+    	<h4>Upcoming Flights</h4>
+    	<table class="table table-condensed table-striped">
+			<tr>
+				<th>
+					Airline Name
+				</th>
+				<th>
+					Flight Number
+				</th>
+				<th>
+					Departure Airport
+				</th>
+				<th>
+					Departure Time
+				</th>
+				<th>
+					Arrival Airport
+				</th>
+				<th>
+					Arrival Time
+				</th>
+				<th>
+					Status
+				</th>
+				<th>
+					Airplane ID
+				</th>
+				</tr>
+			</tr>
+			<tr>
+				{% for item in data %}
+					<td>{{item.airline_name}}</td>
+					<td>{{item.flight_num}}</td>
+					<td>{{item.departure_airport}}</td>
+					<td>{{item.departure_time}}</td>
+					<td>{{item.arrival_airport}}</td>
+					<td>{{item.arrival_time}}</td>
+					<td>{{item.status}}</td>
+					<td>{{item.airplane_id}}</td>
+				{% endfor %}
+     		</tr>
+		</table>
+		<a href="/airline_staff_view_flights"
+		<br>
+		<a href="/airline_staff_home">Go back</a>
+    </body>
+</html>
+
