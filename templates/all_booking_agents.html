@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<h2>Top 5 Booking Agents By Email</h2>
+		<table class="table table-condensed table-bordered">
+			<tr>
+				<th>
+					# of Ticket Sales Past Month
+				</th>
+				<th>
+					Amount of Commission Received Last Year
+				</th>
+			</tr>
+			<tr>
+				{% for item in data %}
+					<td>{{item.username}}</td>
+					<td>{{item.username}}</td>
+				{% end for %}
+     		</tr>
+		</table>
+	</body>
+</html>
+
+		

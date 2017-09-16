@@ -1,0 +1,64 @@
+<html>
+    <head>
+    </head>
+    <body>
+    <form action="/create_flight_auth" method="POST">
+        <h2> Create Flight </h2>
+        <input type="text" name="airline_name" placeholder="airline name"/> 
+        <br>   
+        <input type="text" name="flight_num" placeholder="Flight Number"/>
+        <br>
+        <input type="text" name="departure_airport" placeholder="departure airport"/>
+        <h5> Departure Date </h5>
+        <input type="datetime-local" name="departure_time"/>
+        <br>
+        <input type="text" name="arrival_airport" placeholder="arrival airport"/>
+        <h5> Arrival Date </h5>
+        <input type="datetime-local" name="arrival_time" placeholder="arrival airport"/>
+        <br>
+        <input type="text" name="price" placeholder="price"/>
+        <br>
+        <input type="text" name="status" placeholder="status"/>
+        <br>
+        <input type="text" name="airplane_id" placeholder="airplane id"/>
+        <br>
+        <input type="submit" class="btn btn-default" id="create" value="create"/>
+        <br>
+    </form>
+</body>
+</html>
+
+        <!-- <h3>Upcoming Flights</h3>
+        <table class="table table-condensed table-striped">
+                    <tr>
+                        <th>
+                            Airline Name
+                        </th>
+                        <th>
+                            Flight Number
+                        </th>
+                        <th>
+                            Departure Time
+                        </th>
+                        <th>
+                            Arrival Time
+                        </th>
+                        <th>
+                            Status
+                        </th>
+                        </tr>
+                    </tr>
+                    <tr>
+                        {% for item in data %}
+                            <td>{{item.airline_name}}</td>
+                            <td>{{item.flight_num}}</td>
+                            <td>{{item.departure_time}}</td>
+                            <td>{{item.arrival_time}}</td>
+                            <td>{{item.status}}</td>
+                        {% endfor %}
+                    </tr>
+        </table>
+        <a href="/airline_staff_home">Go back</a>
+    </body>
+</html>
+ -->

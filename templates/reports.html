@@ -1,0 +1,22 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h2>Most Frequent Customers</h2>
+        <table class="table table-condensed table-bordered">
+            <tr>
+                <th>
+                    Within Last Year
+                </th>
+            </tr>
+            <tr>
+                {{% for item in data %}}
+                    <td>{{item.username}}</td>
+                {{% endfor %}}
+            </tr>
+        </table>
+        <a href="/airline_staff_home">Go back</a>
+    </body>
+</html>
+
+    

@@ -1,0 +1,38 @@
+<html>
+    <head> 
+    </head>
+    <body>
+    	<h2>Search Results</h2>
+    	<table class="table table-condensed table-striped">
+					<tr>
+						<th>
+							Airline Name
+						</th>
+						<th>
+							Flight Number
+						</th>
+						<th>
+							Departure Airport
+						</th>
+						<th>
+							Arrival Airport
+						</th>
+						<th>
+							Status
+						</th>
+					</tr>
+					<tr>
+						{% for item in data %}
+						    <td>{{item.airline_name}}</td>
+						    <td>{{item.flight_num}}</td>
+						    <td>{{item.departure_airport}}</td>
+						    <td>{{item.arrival_airport}}</td>
+						    <td>{{item.status}}</td>
+						{% endfor %}
+     				</tr>
+			</table>
+		</form>
+		<a href="/customer_home">Go back</a>
+    </body>
+</html>
+

@@ -1,0 +1,52 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<h2> View My Flights </h2>
+		<table class="table table-condensed table-striped">
+			<tr>
+				<th>
+					Airline Name
+				</th>
+				<th>
+					Flight Number
+				</th>
+				<th>
+					Departure Airport
+				</th>
+				<th>
+					Departure Time
+				</th>
+				<th>
+					Arrival Airport
+				</th>
+				<th>
+					Arrival Time
+				</th>
+				<th>
+					Status
+				</th>
+				<th>
+					Airplane ID
+				</th>
+				</tr>
+			</tr>
+			<tr>
+				{% for item in data %}
+					<td>{{item.airline_name}}</td>
+					<td>{{item.flight_num}}</td>
+					<td>{{item.departure_airport}}</td>
+					<td>{{item.departure_time}}</td>
+					<td>{{item.arrival_airport}}</td>
+					<td>{{item.arrival_time}}</td>
+					<td>{{item.status}}</td>
+					<td>{{item.airplane_id}}</td>
+					<td>'/n'</td>
+				{% endfor %}
+     		</tr>
+		</table>
+		<a href="/airline_staff_home">Go back</a>
+	</body>
+</html>
+
+		

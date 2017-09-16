@@ -1,0 +1,30 @@
+<html>
+    <head> 
+    </head>
+    <body>
+    	<h2>View Commission Results</h2>
+    	<table class="table table-condensed table-striped">
+					<tr>
+						<th>
+							Total commission for past 30 days
+						</th>
+						<!-- <th>
+							Average commission received per ticket booked for past 30 days
+						</th> -->
+						<th>
+							Total number of tickets sold for past 30 days
+						</th>
+					</tr>
+					<tr>
+						<!-- {% for item in data %} -->
+						    <td>{{item.price}}</td>
+						    <!-- <td>{{item.price}}</td> -->
+						    <td>{{item.ticket_id}}</td>
+						<!-- {% endfor %} -->
+     				</tr>
+			</table>
+		</form>
+		<a href="/booking_agent_home">Go back</a>
+    </body>
+</html>
+

@@ -1,0 +1,27 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h2>View Booking Agents</h2>
+        <table class="table table-condensed table-striped">
+            <tr>
+                <th>
+                    Top 5 Based On Ticket Sales for Past Month
+                </th> 
+                <th>
+                    Top 5 Based On Ticket Sales for Past Year
+                </th>    
+                <th>
+                    Top 5 Based On Amount of Commission for Last Year
+                </th>
+            </tr>
+            <tr>
+                {% for item in data %}
+                    <td>{{item.username}}</td>
+                    <td>{{item.username}}</td>
+                    <td>{{item.username}}</td>
+                {% end for %}
+            </tr>
+        </table>
+    </body>
+</html>
